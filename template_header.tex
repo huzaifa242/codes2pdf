@@ -19,7 +19,12 @@
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
-
+\makeatletter
+\renewcommand*\l@section{\@dottedtocline{1}{1.5em}{2em}}
+\makeatother
+\renewcommand\thesection{\arabic{section}.}
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{*-0.5}{*0.5}
 \lstset{frame=tb,
   language=C++,
   aboveskip=1mm,
@@ -49,11 +54,12 @@
 
 \begin{document}
 
-\title{Team Notebook}
+\title{Coding-Library-huzaifa242}
 \author{${author}}
 \maketitle
 
 \begin{multicols}{3}
+\hypersetup{hidelinks}
 \tableofcontents
 \end{multicols}
 

@@ -4,7 +4,7 @@ const spawn = require('child_process').spawn
 const through2 = require('through2')
 const tmp = require('tmp')
 
-const section = ['\\section{', '\\subsection{', '\\subsubsection{']
+const section = ['\\section{', '\\section{', '\\section{']
 const extensions = ['.cc', '.cpp', '.c', '.java', '.py', '.tex']
 
 function walk (_path, depth) {
